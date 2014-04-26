@@ -11,3 +11,12 @@
  *= require_self
  *= require_tree .
  */
+@import "bootstrap";
+
+* {
+  font-family: 'Open Sans' !important;
+}
+
+.fa {
+  font-family: FontAwesome !important;
+}
