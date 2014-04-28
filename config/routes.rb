@@ -1,4 +1,9 @@
 SwapzappPrintservice::Application.routes.draw do
+
+  root 'static_pages#home'
+  match '/templates', to: 'static_pages#templates', via: 'get'
+  match '/printers',  to: 'static_pages#printers',  via: 'get'
+  match '/print',     to: 'static_pages#print',     via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
